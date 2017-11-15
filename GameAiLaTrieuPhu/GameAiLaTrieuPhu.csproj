@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7F81A971-EBAC-45AC-B107-78938BAA729D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GameAiLaTrieuPhu</RootNamespace>
+    <AssemblyName>GameAiLaTrieuPhu</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\AiLaTrieuPhu.cs" />
+    <Compile Include="Class\CauHoi.cs" />
+    <Compile Include="Class\DapAn.cs" />
+    <Compile Include="Form\FormNhapBoCauHoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormNhapBoCauHoi.Designer.cs">
+      <DependentUpon>FormNhapBoCauHoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormGoiDien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormGoiDien.Designer.cs">
+      <DependentUpon>FormGoiDien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormKhanGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormKhanGia.Designer.cs">
+      <DependentUpon>FormKhanGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormKetThuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormKetThuc.Designer.cs">
+      <DependentUpon>FormKetThuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormHuongDan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormHuongDan.Designer.cs">
+      <DependentUpon>FormHuongDan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormOK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormOK.Designer.cs">
+      <DependentUpon>FormOK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Class\TienThuong.cs" />
+    <EmbeddedResource Include="Form\FormNhapBoCauHoi.resx">
+      <DependentUpon>FormNhapBoCauHoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormGoiDien.resx">
+      <DependentUpon>FormGoiDien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormKhanGia.resx">
+      <DependentUpon>FormKhanGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormKetThuc.resx">
+      <DependentUpon>FormKetThuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormHuongDan.resx">
+      <DependentUpon>FormHuongDan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormOK.resx">
+      <DependentUpon>FormOK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Imagine\50-50.png" />
+    <Content Include="Imagine\bg.png" />
+    <Content Include="Imagine\bgform1.png" />
+    <None Include="Imagine\call.jpg" />
+    <Content Include="Imagine\DaSuDung_50-50.png" />
+    <Content Include="Imagine\DaSuDung_Goi_Nguoi_Than.png" />
+    <Content Include="Imagine\DaSuDung_Tu_Van_TC.png" />
+    <Content Include="Imagine\DaSuDung_Y_Kien_K-Gia.png" />
+    <Content Include="Imagine\game-ai-la-trieu-phu-online-mien-phi.png" />
+    <Content Include="Imagine\Goi_Nguoi_Than.png" />
+    <Content Include="Imagine\ket thuc.jpg" />
+    <None Include="Imagine\KGA %281%29.png" />
+    <None Include="Imagine\KGB.png" />
+    <None Include="Imagine\KGC.png" />
+    <None Include="Imagine\KGD.png" />
+    <Content Include="Imagine\kt.jpg" />
+    <Content Include="Imagine\luatchoi.PNG" />
+    <Content Include="Imagine\ScreenHunter_03 Dec. 04 13.48.gif" />
+    <Content Include="Imagine\Tu_Van_TC.png" />
+    <Content Include="Imagine\Y_Kien_K-Gia.png" />
+    <None Include="Music\hello.wav" />
+    <Content Include="Music\Goi_Dien_Cho_Nguoi_Than.wav" />
+    <Content Include="Music\Hoi_Y_Kien_Khan_Gia_1.wav" />
+    <Content Include="Music\Luat_Choi.wav" />
+    <Content Include="Music\Mo_Dau.wav" />
+    <Content Include="Music\nen.mp3" />
+    <Content Include="Music\vui vui.wav" />
+    <None Include="Music\nen.wav" />
+    <Content Include="Music\Qua_Cau_10_P1.wav" />
+    <Content Include="Music\Qua_Cau_10_P2.wav" />
+    <Content Include="Music\Qua_Cau_5.wav" />
+    <Content Include="Music\Tra_Loi_Dung_Loai_Cau_De.wav" />
+    <Content Include="Music\Tro_Giup_50_50.wav" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
